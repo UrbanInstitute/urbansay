@@ -10,15 +10,18 @@ var ansiRegex = require('ansi-regex')();
 var topOffset = 3;
 var leftOffset = 17;
 var defaultGreeting =
-  '\n     _-----_' +
-  '\n    |       |    ' +
-  '\n    |' + chalk.red('--(o)--') + '|    ' +
-  '\n   `---------´   ' +
-  '\n    ' + chalk.yellow('(') + ' _' + chalk.yellow('´U`') + '_ ' + chalk.yellow(')') + '    ' +
-  '\n    /___A___\\    ' +
-  '\n     ' + chalk.yellow('|  ~  |') + '     ' +
-  '\n   __' + chalk.yellow('\'.___.\'') + '__   ' +
-  '\n ´   ' + chalk.red('`  |') + '° ' + chalk.red('´ Y') + ' ` ';
+  '\n'+chalk.grey('    . . . . . . . .              ' )+
+  '\n'+chalk.grey('    . . . . . .')+chalk.cyan('_')+chalk.grey('. .')+chalk.cyan('_               ')+
+  '\n'+chalk.grey('    . . .')+chalk.cyan(' | | | / |_|  /_\\  |\\ |   ')+
+  '\n'+chalk.grey('    . . .')+chalk.cyan(' |_| | \\ |_| /   \\ | \\|   ')+
+  '\n'+chalk.grey('    . . . .')+' I N S T I T U T E      '+
+  '\n'+chalk.grey('    . . . . . . . .                ')+
+  '\n'+chalk.grey('    . . . . . . . .                ')+
+  '\n'+chalk.grey('    . . . . . . . .                ')+
+  '\n'+'                                   '+
+  '\n'+'                                   '+
+  '\n'+'                                   '+
+  '\n'+'                                   ';
 
 module.exports = function (message, options) {
   message = (message || 'Welcome to Yeoman, ladies and gentlemen!').trim();
